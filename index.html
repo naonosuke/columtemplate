@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>SiteTitle</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" >
+		<meta name="description" content="" >
+		<meta name="keywords" content="" >
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <link rel="stylesheet" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+        <script type="text/javascript" src="js/smart_menu.js"></script>
+
+	</head>
+<body>
+    <header class="glabal_nav">
+	    <header class="global_nav_index">
+	        <div class="innner">
+	            <div id="centering">
+			        <div class="cell">
+						<div class="logo">
+						    <!-- LOGO -->
+						</div>
+					</div>
+					<div class="global_nav_menu">
+					    <div class="global_nav_menu_contents_first">
+					    <li class="global_nav_menu_contents">
+					        <a href="index.html" class="scroll">Nav1</a>
+					    </li>
+					    <li class="global_nav_menu_contents">
+					        <a href="about.html" class="scroll">Nav2</a>
+					    </li>
+					    <li class="global_nav_menu_contents">
+					        <a href="#" class="scroll">Nav3</a>
+					    </li>
+					    <li class="global_nav_menu_contents">
+					        <a href="#" class="scroll">Nav4</a>
+					    </li>
+					    <li class="global_nav_menu_contents">
+					        <a href="#" class="scroll">Nav5</a>
+					    </li>
+					    <li class="global_nav_menu_contents">
+					        <a href="#" class="scroll">Nav6</a>
+					    </li>
+					    <li class="global_nav_menu_contents">
+					        <a href="#" class="scroll">Nav7</a>
+					    </li>
+					    <li class="global_nav_menu_contents">
+					        <a href="#" class="scroll">Nav8</a>
+					    </li>
+					</div>
+			    </div>
+			</div>
+			</header>
+	    </header>
+	    <!-- Smartphone design  -->
+	    <header id="js-accordion" class="header smart_nav">
+	        <div class="header__heading">
+	            <div class="smart_margin"></div>
+	            <h1 class="logo_smart"></h1>
+	                <span class="menu-button">
+	                    <i></i>
+	                </span>
+	        </div>
+	        <nav class="nav-content">
+	            <ul>
+	                <li><a href="#">Nav1</a></li>
+	                <li><a href="#">Nav2</a></li>
+	                <li><a href="#">Nav3</a></li>
+	                <li><a href="#">Nav4</a></li>
+	                <li><a href="#">Nav5</a></li>
+	                <li><a href="#">Nav6</a></li>
+	                <li><a href="#">Nav7</a></li>
+	                <li><a href="#">Nav8</a></li>
+	            </ul>
+	        </nav>
+	    </header>
+	</header>
+	<!-- header -->
+    <div id="index">
+        <!-- <div class="margin200"></div> -->
+        <!-- 1Colum -->
+        <div class="col_index">
+	        <div class="col6">
+	        Colom1
+	        </div>
+	    </div>
+        <!-- 2Colum -->
+        <div class="col_index">
+	        <div class="col1">
+	        a
+	        </div>
+	        <div class="col5">
+	        aaaaaz
+	        </div>
+        </div>
+        <div class="col_index">
+	        <div class="col2">
+	        aaaaaz
+	        </div>
+	        <div class="col4">
+	        aaaaaz
+	        </div>
+	    </div>
+        <div class="col_index">
+	        <div class="col3">
+	        aaaaaz
+	        </div>
+	        <div class="col3">
+	        aaaaaz
+	        </div>
+	    </div>
+        <!-- 3Colum -->
+        <div class="col_index">
+			<div class="col2">
+			aaaaaz
+	        </div>
+	        <div class="col2">
+	        aaaaaz
+	        </div>
+	        <div class="col2">
+	        aaaaaz
+	        </div>
+	    </div>
+    </div>
+    <div id="footer" style="top: 0px; position: relative;">
+        <
+        <div id="addrs">
+		    <p>Copyright © 2012-2016 HOSEI2 BROADCASTING CLUB All Rights Reserved.</p>
+	    </div>
+    </div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+<script type="text/javascript">
+	$(function() {
+	 $(".scroll").click(function(event){
+	  event.preventDefault();
+	  var url = this.href;
+	  var parts = url.split("#");
+	  var target = parts[1];
+	  var target_offset = $("#"+target).offset();
+	  var target_top = target_offset.top;
+	  $('html, body').animate({scrollTop:target_top}, 1500);
+	  });
+	 });
+</script>
+<script>
+$(function() {
+  var h = $(window).height();
+ 
+  $('#floo_contents').css('display','none');
+  $('#loader-bg ,#loader').height(h).css('display','block');
+});
+ 
+$(window).load(function () { //全ての読み込みが完了したら実行
+  $('#loader-bg').delay(900).fadeOut(800);
+  $('#loader').delay(600).fadeOut(300);
+  $('#floo_contents').css('display', 'block');
+});
+ 
+//10秒たったら強制的にロード画面を非表示
+$(function(){
+  setTimeout('stopload()',10000);
+});
+ 
+function stopload(){
+  $('#floo_contents').css('display','block');
+  $('#loader-bg').delay(900).fadeOut(800);
+  $('#loader').delay(600).fadeOut(300);
+}
+</script>
+<script>
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var width, height;
+var colors = ["#B612D4", "#9380B7", "#FE4365", "#CE5973", "#369699"]
+
+var radius = 50;
+var angle = 0;
+var increment = 0.1;
+
+function loop() {
+  var x = width/2 + radius * Math.cos(angle);
+  var y = height/2 + radius * Math.sin(angle);
+  splat(x, y);
+  angle += 0.1;
+  radius += increment;
+  if (radius > 200) increment = -0.1;
+  if (radius < 50) increment = 0.1;
+  ctx.fillStyle = "rgba(238, 238, 238, 0.01)";
+  // ctx.fillRect(0, 0, width, height);
+  requestAnimationFrame(loop);
+}
+
+function splat(x, y) {
+  var specs = 2 + Math.ceil(Math.random()*5);
+  for (var i = 0; i < specs; i ++) {
+    var a = Math.random()*2;
+    var r = Math.random()*30;
+    var specX = x + r * Math.cos(a);
+    var specY = y + r * Math.sin(a);
+    var size = 1 + Math.random()*4;
+    ctx.fillStyle = colors[Math.floor(Math.random()*colors.length)]
+    ctx.fillRect(specX-size, specY-size, size*2, size*2);
+  }
+}
+
+function resize() {
+  width = canvas.width = window.innerWidth;
+  height = canvas.height = window.innerHeight;
+}
+
+resize();
+loop();
+
+window.addEventListener("resize", resize);
+</script>
+</body>
+</html>
